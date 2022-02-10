@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
     text-decoration: none;
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -19,6 +20,7 @@
     rgb(255, 196, 0),
     rgb(255, 255, 255)
   );
+  position: fixed;
 }
 
 .topbar p {     
@@ -30,7 +32,15 @@ header {
     display: flex;
     width: 100%;
     height: 80px;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: fixed;
+    margin-top: 30px;
+}
+
+main {
+    width: 100%;
+    height: 1600px;
 }
 
 header img.legopng {
@@ -39,4 +49,18 @@ header img.legopng {
     margin-top: 2px;
     border-right: 2px solid rgb(255, 196, 0);
     line-height: 20px;
+}
+
+header ul {
+    font-size: 15px;
+    color: white;
+}
+
+main .top-foto {
+    display: flex;
+}
+
+main .top-foto img.foto-boven {
+    width: 100%;
+    height: 500px;
 }
